@@ -1,0 +1,6 @@
+[ 2016-09-18T12:32:22+08:00 ] 93.174.93.136 http://www.baidu.com/cache/global/img/gs.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.019900s ]
+ERR: 无法加载模块:Cache
+

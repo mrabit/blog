@@ -1,0 +1,30 @@
+[ 2016-09-15T00:24:53+08:00 ] 125.71.135.170 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.035624s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-09-15T00:24:55+08:00 ] 125.71.135.170 /image_logo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000628s ]
+ERR: 无法加载模块:Image_logo
+
+[ 2016-09-15T00:24:56+08:00 ] 125.71.135.170 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000575s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-09-15T01:48:28+08:00 ] 127.0.0.1 /proxy.pac
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.029869s ]
+ERR: 无法加载模块:Proxy
+
+[ 2016-09-15T02:13:33+08:00 ] 127.0.0.1 /proxy.pac
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003027s ]
+ERR: 无法加载模块:Proxy
+

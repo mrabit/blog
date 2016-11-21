@@ -1,0 +1,50 @@
+<include file="Home@Public/top" />
+<include file="Home@Public/side" />
+<section class="content">
+    <div class="wrapper">
+        <section class="row padder">
+            <article class="col-xs-12 padder-v">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-8 ">
+                        <p class="article-title h2">{$article.title}</p>
+                    </div>
+                    <div class="col-sm-4 hidden-xs text-right">
+                        <div class="meta l-h-2x" style="line-height: 40px">
+                            <span class="author">  {$article.uname} </span>
+                            <span>发布于</span>
+                            <time datetime="{$article.create_time2}">{$article.create_time2}</time>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="entry-content m-t-md  block">
+                            <if condition="$article.reprint_url neq null">
+                                <blockquote class="hidden-xs">
+                                    <p>原文：<a href="{$article.reprint_url}" target="_blank">{$article.reprint_url}</a></p>
+                                </blockquote>
+                            </if>
+                            {$article.content}
+                        </div>
+                        <div class="line line-dashed b-b line-lg "></div>
+                        <div class="details_info">
+                            <a href="{$url | get_url}" ><p class="text-ellipsis" style="display: block;white-space: inherit;"><span style="color:#666;">本文链接</span>：{$url | get_url}</p></a>
+                            <p>-- <acronym title="End of File">EOF</acronym> --</p>
+                        </div>
+                        <div class="post-info"> <p> 作者  <a href="/author/admin" data-user=""> <code class="notebook">{$article.uname}</code></a> 发表于 <i>{$article.create_time}</i>
+                            <if condition="$article.modify_time neq null">
+                                ，最后修改于 <i>{$article.modify_time}</i>
+                            </if>
+                        </p>  </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </div>
+</section>
+<include file="Home@Public/footer" />
+<script>
+    require(["jquery"], function ($) {
+//        $.post("{:U('/home/index/lists')}", function (d) {
+//            $("#lists_content").html(d);
+//        })
+    });
+</script>

@@ -1,0 +1,480 @@
+[ 2016-10-25T00:01:04+08:00 ] 10.169.88.177 /home/bing/add_imginfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007663s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003625s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `tp_bing` WHERE `img_time` = '2016-10-25' LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `tp_bing` (`img_real_url`,`img_url`,`img_url_480`,`img_time`,`img_title`) VALUES ('http://s.cn.bing.net/az/hprichbg/rb/Eyjafjallajokull_ZH-CN7486636209_1920x1080.jpg','Uploads/bing/2016-10-25.jpg','Uploads/bing/480.2016-10-25.jpg','2016-10-25','爆发中的艾雅法拉火山，冰岛 (© moodboard/Cultura/Getty Images)') [ RunTime:0.0081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001917s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001971s ]
+
+[ 2016-10-25T00:13:20+08:00 ] 10.169.88.177 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000491s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 9 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067338s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067411s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001787s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001828s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000462s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000512s ]
+
+[ 2016-10-25T00:13:22+08:00 ] 10.169.88.177 /home/index/get_article_totalPage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000770s ]
+SQL: SHOW COLUMNS FROM `tp_article` [ RunTime:0.0167s ]
+NOTIC: [8] Undefined index: tags_id /usr/share/httpd/blog/Application/Home/Entity/Article.class.php 第 42 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_article` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-10-25T00:13:23+08:00 ] 10.169.88.177 /home/index/lists.html?start=0&length=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000413s ]
+SQL: SHOW COLUMNS FROM `tp_article` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: tags_id /usr/share/httpd/blog/Application/Home/Entity/Article.class.php 第 20 行.
+SQL: SELECT a.id,`title`,`reprint_url`,`brief_introduction`,u.uname,`create_time` FROM `tp_article` as a left join tp_user as u on create_user_id = u.id  ORDER BY create_time desc LIMIT 0,3   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+NOTIC: [8] Undefined index: create_time2 /usr/share/httpd/blog/Application/Runtime/Cache/Home/72653c5b98bacce026832b51aa92934a.php 第 14 行.
+NOTIC: [8] Undefined index: create_time2 /usr/share/httpd/blog/Application/Runtime/Cache/Home/72653c5b98bacce026832b51aa92934a.php 第 14 行.
+NOTIC: [8] Undefined index: create_time2 /usr/share/httpd/blog/Application/Runtime/Cache/Home/72653c5b98bacce026832b51aa92934a.php 第 14 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015692s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015746s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000186s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000386s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000428s ]
+
+[ 2016-10-25T00:13:24+08:00 ] 10.169.88.177 /home/bing/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/1ea03fdd8a78f5ec7e5062d3ef956260.php 第 9 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/1ea03fdd8a78f5ec7e5062d3ef956260.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/1ea03fdd8a78f5ec7e5062d3ef956260.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/1ea03fdd8a78f5ec7e5062d3ef956260.php 第 68 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/1ea03fdd8a78f5ec7e5062d3ef956260.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011621s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011678s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000163s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000429s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000483s ]
+
+[ 2016-10-25T00:13:24+08:00 ] 10.169.88.177 /home/bing/get_img_totalPage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_bing` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-10-25T00:13:25+08:00 ] 10.169.88.177 /home/bing/lists.html?start=0&length=9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000444s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: field /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 23 行.
+SQL: SELECT * FROM `tp_bing` ORDER BY img_time desc LIMIT 0,9   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020143s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020195s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000160s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000430s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000473s ]
+
+[ 2016-10-25T06:08:34+08:00 ] 10.169.88.177 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 9 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008693s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008739s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000160s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000390s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000432s ]
+
+[ 2016-10-25T10:20:22+08:00 ] 10.169.88.177 /bing
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001570s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001856s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_bing` WHERE `img_time` = '2016-10-25' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-10-25T12:43:39+08:00 ] 10.169.88.177 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 9 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063280s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063341s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007496s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007555s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008542s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008611s ]
+
+[ 2016-10-25T12:43:45+08:00 ] 10.169.88.177 /home/index/get_article_totalPage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000442s ]
+SQL: SHOW COLUMNS FROM `tp_article` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: tags_id /usr/share/httpd/blog/Application/Home/Entity/Article.class.php 第 42 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_article` LIMIT 1   [ RunTime:0.0219s ]
+
+[ 2016-10-25T12:43:45+08:00 ] 10.169.88.177 /home/index/lists.html?start=0&length=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000468s ]
+SQL: SHOW COLUMNS FROM `tp_article` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: tags_id /usr/share/httpd/blog/Application/Home/Entity/Article.class.php 第 20 行.
+SQL: SELECT a.id,`title`,`reprint_url`,`brief_introduction`,u.uname,`create_time` FROM `tp_article` as a left join tp_user as u on create_user_id = u.id  ORDER BY create_time desc LIMIT 0,3   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+NOTIC: [8] Undefined index: create_time2 /usr/share/httpd/blog/Application/Runtime/Cache/Home/72653c5b98bacce026832b51aa92934a.php 第 14 行.
+NOTIC: [8] Undefined index: create_time2 /usr/share/httpd/blog/Application/Runtime/Cache/Home/72653c5b98bacce026832b51aa92934a.php 第 14 行.
+NOTIC: [8] Undefined index: create_time2 /usr/share/httpd/blog/Application/Runtime/Cache/Home/72653c5b98bacce026832b51aa92934a.php 第 14 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031899s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031952s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000132s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000491s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000531s ]
+
+[ 2016-10-25T12:43:50+08:00 ] 10.169.88.177 /home/bing/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/1ea03fdd8a78f5ec7e5062d3ef956260.php 第 9 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/1ea03fdd8a78f5ec7e5062d3ef956260.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/1ea03fdd8a78f5ec7e5062d3ef956260.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/1ea03fdd8a78f5ec7e5062d3ef956260.php 第 68 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/1ea03fdd8a78f5ec7e5062d3ef956260.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028667s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028713s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000160s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000477s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000530s ]
+
+[ 2016-10-25T12:43:53+08:00 ] 10.169.88.177 /home/bing/get_img_totalPage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_bing` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-10-25T12:43:54+08:00 ] 10.169.88.177 /home/bing/lists.html?start=0&length=9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000454s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: field /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 23 行.
+SQL: SELECT * FROM `tp_bing` ORDER BY img_time desc LIMIT 0,9   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020580s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020656s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000161s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000437s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000490s ]
+
+[ 2016-10-25T12:44:13+08:00 ] 10.169.88.177 /bing
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000661s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_bing` WHERE `img_time` = '2016-10-25' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-10-25T13:46:27+08:00 ] 10.169.88.177 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 9 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008803s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008850s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000161s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000389s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000432s ]
+
+[ 2016-10-25T13:46:27+08:00 ] 10.169.88.177 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000467s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 9 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008498s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008549s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000396s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000459s ]
+
+[ 2016-10-25T13:46:31+08:00 ] 10.169.88.177 /home/index/get_article_totalPage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+SQL: SHOW COLUMNS FROM `tp_article` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: tags_id /usr/share/httpd/blog/Application/Home/Entity/Article.class.php 第 42 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_article` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-10-25T23:43:28+08:00 ] 10.169.88.177 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 9 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008182s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008239s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000126s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000411s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000457s ]
+
+[ 2016-10-25T23:43:29+08:00 ] 10.169.88.177 /home/index/get_article_totalPage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+SQL: SHOW COLUMNS FROM `tp_article` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: tags_id /usr/share/httpd/blog/Application/Home/Entity/Article.class.php 第 42 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_article` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-10-25T23:43:30+08:00 ] 10.169.88.177 /home/index/lists.html?start=0&length=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+SQL: SHOW COLUMNS FROM `tp_article` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: tags_id /usr/share/httpd/blog/Application/Home/Entity/Article.class.php 第 20 行.
+SQL: SELECT a.id,`title`,`reprint_url`,`brief_introduction`,u.uname,`create_time` FROM `tp_article` as a left join tp_user as u on create_user_id = u.id  ORDER BY create_time desc LIMIT 0,3   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+NOTIC: [8] Undefined index: create_time2 /usr/share/httpd/blog/Application/Runtime/Cache/Home/72653c5b98bacce026832b51aa92934a.php 第 14 行.
+NOTIC: [8] Undefined index: create_time2 /usr/share/httpd/blog/Application/Runtime/Cache/Home/72653c5b98bacce026832b51aa92934a.php 第 14 行.
+NOTIC: [8] Undefined index: create_time2 /usr/share/httpd/blog/Application/Runtime/Cache/Home/72653c5b98bacce026832b51aa92934a.php 第 14 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013098s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013148s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000393s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000433s ]
+
+[ 2016-10-25T23:43:34+08:00 ] 10.169.88.177 /home/bing/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/1ea03fdd8a78f5ec7e5062d3ef956260.php 第 9 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/1ea03fdd8a78f5ec7e5062d3ef956260.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/1ea03fdd8a78f5ec7e5062d3ef956260.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/1ea03fdd8a78f5ec7e5062d3ef956260.php 第 68 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/1ea03fdd8a78f5ec7e5062d3ef956260.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007831s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007874s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000443s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000490s ]
+
+[ 2016-10-25T23:43:35+08:00 ] 10.169.88.177 /home/bing/get_img_totalPage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_bing` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-10-25T23:43:35+08:00 ] 10.169.88.177 /home/bing/lists.html?start=0&length=9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000468s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: field /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 23 行.
+SQL: SELECT * FROM `tp_bing` ORDER BY img_time desc LIMIT 0,9   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012028s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012075s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000157s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000430s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000471s ]
+

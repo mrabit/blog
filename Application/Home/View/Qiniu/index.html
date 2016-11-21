@@ -1,0 +1,83 @@
+<include file="Home@Public/top"/>
+<include file="Home@Public/side"/>
+<style>
+    .preview-lg {
+        width: 100%;
+    }
+
+    .preview {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 15px;
+        overflow: hidden;
+        background: #f7f7f7;
+    }
+
+</style>
+<section class="content hide">
+    <div class="wrapper">
+        <div class="row">
+            <div class="col-xs-4 cropper-img">
+                <img src="http://blog.mrabit.com/Uploads/bing/480.2016-10-29.jpg" class="img-full img-responsive">
+            </div>
+            <div class="col-xs-4">
+                <div class="preview preview-lg"></div>
+            </div>
+            <div class="col-xs-8">
+                <input type="file" id="file" data-icon="false" data-classbutton="btn btn-default" data-classinput="form-control inline v-middle input-s" tabindex="-1" style="position: absolute; clip: rect(0px 0px 0px 0px);">
+                <div class="bootstrap-filestyle input-group">
+                    <input type="text" class="form-control "  id="show_file" disabled="">
+                    <span class="group-span-filestyle input-group-btn" tabindex="0">
+                        <label for="file" class="btn btn-default ">
+                            <span class="glyphicon glyphicon-folder-open"></span>
+                            Choose file
+                        </label>
+                    </span>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <button type="button" class="btn btn-default padder-lg getDataUrl">获取</button>
+            </div>
+            <div class="col-xs-12 m-t-md">
+                <div class="form-group">
+                    <textarea class="form-control" id="cropper-img" rows="8"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<include file="Home@Public/footer"/>
+<script>
+    require(["jquery", "cropper"], function ($) {
+
+        $(".getDataUrl").click(function () {
+            var type = "image/png";
+            var image_base64 = $('.cropper-img > img').cropper("getDataURL", "image/png");
+            image_base64 = image_base64.replace("data:"+type+";base64,","");
+            $("#cropper-img").val(image_base64);
+            $.post("{:U('/home/qiniu/qiniu_base64')}",{post_string: image_base64}, function (d) {
+                console.log(d);
+            },"json");
+        });
+
+        $('#file').change(function (e) {
+            var file = e.target.files[0];
+            $("#show_file").val(file.name);
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                var $img = $('<img>').attr("src", e.target.result).addClass("img-full");
+                $(".cropper-img").empty().append($img);
+                $('.cropper-img > img').cropper({
+                    aspectRatio: 1,
+                    preview: ".preview"
+                });
+                $(".preview").height($('.cropper-img > img').height());
+
+            };
+            reader.readAsDataURL(file);
+        });
+
+        $(".content").removeClass("hide");
+
+    });
+</script>

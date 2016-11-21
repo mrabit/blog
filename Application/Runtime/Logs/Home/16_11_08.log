@@ -1,0 +1,978 @@
+[ 2016-11-08T00:01:03+08:00 ] 10.169.88.177 /home/bing/add_imginfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.027807s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001882s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001951s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0314s ]
+SQL: SELECT * FROM `tp_bing` WHERE `img_time` = '2016-11-08' LIMIT 1   [ RunTime:0.0101s ]
+NOTIC: [8] Undefined index: error /usr/share/httpd/blog/Application/Model/Qiniu.class.php 第 56 行.
+NOTIC: [8] Undefined index: error /usr/share/httpd/blog/Application/Model/Qiniu.class.php 第 56 行.
+SQL: INSERT INTO `tp_bing` (`img_real_url`,`img_url`,`img_url_480`,`img_time`,`img_title`) VALUES ('http://s.cn.bing.net/az/hprichbg/rb/NottulnHerbst_ZH-CN9638949027_1920x1080.jpg','http://ofsvy074q.bkt.clouddn.com/1920.2016-11-08.jpg','http://ofsvy074q.bkt.clouddn.com/480.2016-11-08.jpg','2016-11-08','诺图尔恩小镇，Münsterland，北莱茵-威斯特法伦州，德国 (© Hans Blossey/age fotostock)') [ RunTime:0.0294s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001989s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002071s ]
+
+[ 2016-11-08T06:18:51+08:00 ] 10.169.88.177 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 9 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066916s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066966s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000125s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000420s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000475s ]
+
+[ 2016-11-08T19:55:24+08:00 ] 10.169.88.177 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 9 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008986s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009034s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000135s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000422s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000484s ]
+
+[ 2016-11-08T21:21:10+08:00 ] 10.169.88.177 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 9 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008726s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008773s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000186s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000388s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000435s ]
+
+[ 2016-11-08T21:21:14+08:00 ] 10.169.88.177 /home/index/get_article_totalPage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+SQL: SHOW COLUMNS FROM `tp_article` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: tags_id /usr/share/httpd/blog/Application/Home/Entity/Article.class.php 第 42 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_article` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-11-08T21:21:19+08:00 ] 10.169.88.177 /home/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000456s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 9 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007876s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007927s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000161s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000416s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000458s ]
+
+[ 2016-11-08T21:21:19+08:00 ] 10.169.88.177 /home/index/get_article_totalPage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+SQL: SHOW COLUMNS FROM `tp_article` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: tags_id /usr/share/httpd/blog/Application/Home/Entity/Article.class.php 第 42 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_article` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-11-08T21:21:22+08:00 ] 10.169.88.177 /home/archives/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+SQL: SHOW COLUMNS FROM `tp_article` [ RunTime:0.0007s ]
+SQL: SELECT `create_time`,COUNT( * ),GROUP_CONCAT(id) as id FROM `tp_article` GROUP BY FROM_UNIXTIME( create_time, "%Y年%m月%日" ) ORDER BY create_time DESC  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`title`,`create_time` FROM `tp_article` WHERE `id` IN ('33','32','31','30','29','28','27','26','25','34') ORDER BY create_time desc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`create_time` FROM `tp_article` WHERE `id` IN ('19','20','21','22','24') ORDER BY create_time desc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 9 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 68 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 68 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 83 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 83 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 83 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 83 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 83 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 83 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 83 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 83 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 83 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 83 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 83 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 83 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 83 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 83 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011190s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011238s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000128s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000167s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000423s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000485s ]
+
+[ 2016-11-08T21:21:28+08:00 ] 10.169.88.177 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000424s ]
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 9 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011197s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011247s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000461s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000510s ]
+
+[ 2016-11-08T21:21:28+08:00 ] 10.169.88.177 /home/index/details/id/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+SQL: SHOW COLUMNS FROM `tp_article` [ RunTime:0.0006s ]
+SQL: SELECT `title`,`reprint_url`,`content`,u.uname,FROM_UNIXTIME( create_time,'%Y-%m-%d %H:%i:%s' ) as create_time,FROM_UNIXTIME( create_time,'%m月%d,%Y' ) as create_time2,FROM_UNIXTIME( modify_time,'%Y-%m-%d %H:%i:%s' ) as modify_time FROM `tp_article` INNER JOIN tp_user as u on create_user_id = u.id  WHERE tp_article.id = '24' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 9 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 68 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 68 行.
+NOTIC: [8] Undefined variable: url /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 98 行.
+NOTIC: [8] Undefined variable: url /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 98 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008423s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008478s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000163s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000413s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000458s ]
+
+[ 2016-11-08T21:21:29+08:00 ] 10.169.88.177 /home/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000442s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 9 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007703s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007754s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000377s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000422s ]
+
+[ 2016-11-08T21:21:30+08:00 ] 10.169.88.177 /home/index/details/id/19.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+SQL: SHOW COLUMNS FROM `tp_article` [ RunTime:0.0006s ]
+SQL: SELECT `title`,`reprint_url`,`content`,u.uname,FROM_UNIXTIME( create_time,'%Y-%m-%d %H:%i:%s' ) as create_time,FROM_UNIXTIME( create_time,'%m月%d,%Y' ) as create_time2,FROM_UNIXTIME( modify_time,'%Y-%m-%d %H:%i:%s' ) as modify_time FROM `tp_article` INNER JOIN tp_user as u on create_user_id = u.id  WHERE tp_article.id = '19' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 9 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 68 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 68 行.
+NOTIC: [8] Undefined variable: url /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 98 行.
+NOTIC: [8] Undefined variable: url /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 98 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010300s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010351s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000128s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000422s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000477s ]
+
+[ 2016-11-08T21:21:33+08:00 ] 10.169.88.177 /home/index/details/id/20.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000413s ]
+SQL: SHOW COLUMNS FROM `tp_article` [ RunTime:0.0006s ]
+SQL: SELECT `title`,`reprint_url`,`content`,u.uname,FROM_UNIXTIME( create_time,'%Y-%m-%d %H:%i:%s' ) as create_time,FROM_UNIXTIME( create_time,'%m月%d,%Y' ) as create_time2,FROM_UNIXTIME( modify_time,'%Y-%m-%d %H:%i:%s' ) as modify_time FROM `tp_article` INNER JOIN tp_user as u on create_user_id = u.id  WHERE tp_article.id = '20' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 9 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 68 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 68 行.
+NOTIC: [8] Undefined variable: url /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 98 行.
+NOTIC: [8] Undefined variable: url /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 98 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009044s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009095s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000417s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000499s ]
+
+[ 2016-11-08T21:21:37+08:00 ] 10.169.88.177 /home/bing/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000745s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/1ea03fdd8a78f5ec7e5062d3ef956260.php 第 9 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/1ea03fdd8a78f5ec7e5062d3ef956260.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/1ea03fdd8a78f5ec7e5062d3ef956260.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/1ea03fdd8a78f5ec7e5062d3ef956260.php 第 68 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/1ea03fdd8a78f5ec7e5062d3ef956260.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030353s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030399s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000127s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000418s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000474s ]
+
+[ 2016-11-08T21:21:38+08:00 ] 10.169.88.177 /home/bing/get_img_totalPage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_bing` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-11-08T21:21:38+08:00 ] 10.169.88.177 /home/bing/lists.html?start=0&length=9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: field /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 23 行.
+SQL: SELECT * FROM `tp_bing` ORDER BY img_time desc LIMIT 0,9   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011576s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011623s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000374s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000413s ]
+
+[ 2016-11-08T21:21:40+08:00 ] 10.169.88.177 /home/archives/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000467s ]
+SQL: SHOW COLUMNS FROM `tp_article` [ RunTime:0.0006s ]
+SQL: SELECT `create_time`,COUNT( * ),GROUP_CONCAT(id) as id FROM `tp_article` GROUP BY FROM_UNIXTIME( create_time, "%Y年%m月%日" ) ORDER BY create_time DESC  [ RunTime:0.0007s ]
+SQL: SELECT `id`,`title`,`create_time` FROM `tp_article` WHERE `id` IN ('33','32','31','30','29','28','27','26','25','34') ORDER BY create_time desc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`create_time` FROM `tp_article` WHERE `id` IN ('19','20','21','22','24') ORDER BY create_time desc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 9 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 68 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 68 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 83 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 83 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 83 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 83 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 83 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 83 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 83 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 83 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 83 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 83 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 83 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 83 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 83 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 83 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010523s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010568s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000131s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000177s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000454s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000503s ]
+
+[ 2016-11-08T21:21:42+08:00 ] 10.169.88.177 /home/bing/about.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000440s ]
+ERR: 非法操作:about
+
+[ 2016-11-08T21:21:43+08:00 ] 10.169.88.177 /home/index/details/id/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `tp_article` [ RunTime:0.0006s ]
+SQL: SELECT `title`,`reprint_url`,`content`,u.uname,FROM_UNIXTIME( create_time,'%Y-%m-%d %H:%i:%s' ) as create_time,FROM_UNIXTIME( create_time,'%m月%d,%Y' ) as create_time2,FROM_UNIXTIME( modify_time,'%Y-%m-%d %H:%i:%s' ) as modify_time FROM `tp_article` INNER JOIN tp_user as u on create_user_id = u.id  WHERE tp_article.id = '24' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 9 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 68 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 68 行.
+NOTIC: [8] Undefined variable: url /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 98 行.
+NOTIC: [8] Undefined variable: url /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 98 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008549s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000163s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000411s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000480s ]
+
+[ 2016-11-08T21:21:45+08:00 ] 10.169.88.177 /home/index/details/id/19.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+SQL: SHOW COLUMNS FROM `tp_article` [ RunTime:0.0006s ]
+SQL: SELECT `title`,`reprint_url`,`content`,u.uname,FROM_UNIXTIME( create_time,'%Y-%m-%d %H:%i:%s' ) as create_time,FROM_UNIXTIME( create_time,'%m月%d,%Y' ) as create_time2,FROM_UNIXTIME( modify_time,'%Y-%m-%d %H:%i:%s' ) as modify_time FROM `tp_article` INNER JOIN tp_user as u on create_user_id = u.id  WHERE tp_article.id = '19' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 9 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 68 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 68 行.
+NOTIC: [8] Undefined variable: url /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 98 行.
+NOTIC: [8] Undefined variable: url /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 98 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008451s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000160s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000406s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000460s ]
+
+[ 2016-11-08T21:21:46+08:00 ] 10.169.88.177 /home/index/details/id/19.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `tp_article` [ RunTime:0.0006s ]
+SQL: SELECT `title`,`reprint_url`,`content`,u.uname,FROM_UNIXTIME( create_time,'%Y-%m-%d %H:%i:%s' ) as create_time,FROM_UNIXTIME( create_time,'%m月%d,%Y' ) as create_time2,FROM_UNIXTIME( modify_time,'%Y-%m-%d %H:%i:%s' ) as modify_time FROM `tp_article` INNER JOIN tp_user as u on create_user_id = u.id  WHERE tp_article.id = '19' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 9 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 68 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 68 行.
+NOTIC: [8] Undefined variable: url /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 98 行.
+NOTIC: [8] Undefined variable: url /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 98 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008129s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008173s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000164s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000449s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000524s ]
+
+[ 2016-11-08T21:21:47+08:00 ] 10.169.88.177 /home/index/details/id/19.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+SQL: SHOW COLUMNS FROM `tp_article` [ RunTime:0.0008s ]
+SQL: SELECT `title`,`reprint_url`,`content`,u.uname,FROM_UNIXTIME( create_time,'%Y-%m-%d %H:%i:%s' ) as create_time,FROM_UNIXTIME( create_time,'%m月%d,%Y' ) as create_time2,FROM_UNIXTIME( modify_time,'%Y-%m-%d %H:%i:%s' ) as modify_time FROM `tp_article` INNER JOIN tp_user as u on create_user_id = u.id  WHERE tp_article.id = '19' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 9 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 68 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 68 行.
+NOTIC: [8] Undefined variable: url /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 98 行.
+NOTIC: [8] Undefined variable: url /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 98 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008949s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000161s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000472s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000527s ]
+
+[ 2016-11-08T21:21:48+08:00 ] 10.169.88.177 /home/index/details/id/20.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000451s ]
+SQL: SHOW COLUMNS FROM `tp_article` [ RunTime:0.0006s ]
+SQL: SELECT `title`,`reprint_url`,`content`,u.uname,FROM_UNIXTIME( create_time,'%Y-%m-%d %H:%i:%s' ) as create_time,FROM_UNIXTIME( create_time,'%m月%d,%Y' ) as create_time2,FROM_UNIXTIME( modify_time,'%Y-%m-%d %H:%i:%s' ) as modify_time FROM `tp_article` INNER JOIN tp_user as u on create_user_id = u.id  WHERE tp_article.id = '20' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 9 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 68 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 68 行.
+NOTIC: [8] Undefined variable: url /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 98 行.
+NOTIC: [8] Undefined variable: url /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 98 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008538s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008590s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000164s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000485s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000562s ]
+
+[ 2016-11-08T21:21:49+08:00 ] 10.169.88.177 /home/index/details/id/19.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+SQL: SHOW COLUMNS FROM `tp_article` [ RunTime:0.0006s ]
+SQL: SELECT `title`,`reprint_url`,`content`,u.uname,FROM_UNIXTIME( create_time,'%Y-%m-%d %H:%i:%s' ) as create_time,FROM_UNIXTIME( create_time,'%m月%d,%Y' ) as create_time2,FROM_UNIXTIME( modify_time,'%Y-%m-%d %H:%i:%s' ) as modify_time FROM `tp_article` INNER JOIN tp_user as u on create_user_id = u.id  WHERE tp_article.id = '19' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 9 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 68 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 68 行.
+NOTIC: [8] Undefined variable: url /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 98 行.
+NOTIC: [8] Undefined variable: url /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 98 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009989s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010045s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000140s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000437s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000501s ]
+
+[ 2016-11-08T21:21:55+08:00 ] 10.169.88.177 /home/bing/lists.html?start=0&length=9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: field /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 23 行.
+SQL: SELECT * FROM `tp_bing` ORDER BY img_time desc LIMIT 0,9   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011505s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011554s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000167s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000388s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000434s ]
+
+[ 2016-11-08T21:21:58+08:00 ] 10.169.88.177 /home/bing/about.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+ERR: 非法操作:about
+
+[ 2016-11-08T21:23:02+08:00 ] 10.169.88.177 /home/bing/get_img_totalPage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_bing` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-11-08T21:23:02+08:00 ] 10.169.88.177 /home/bing/lists.html?start=0&length=9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000444s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: field /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 23 行.
+SQL: SELECT * FROM `tp_bing` ORDER BY img_time desc LIMIT 0,9   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011192s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011240s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000372s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000413s ]
+
+[ 2016-11-08T21:23:06+08:00 ] 10.169.88.177 /home/bing/get_img_totalPage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000775s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_bing` LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-11-08T21:23:07+08:00 ] 10.169.88.177 /home/bing/lists.html?start=0&length=9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000628s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: field /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 23 行.
+SQL: SELECT * FROM `tp_bing` ORDER BY img_time desc LIMIT 0,9   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011318s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011364s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000157s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000419s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000465s ]
+
+[ 2016-11-08T21:23:08+08:00 ] 10.169.88.177 /home/tags/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+SQL: SHOW COLUMNS FROM `tp_article_tags` [ RunTime:0.0156s ]
+SQL: SELECT b.id,b.tags_name,count(tags_id) as counts FROM `tp_article_tags` RIGHT join tp_tags as b on tags_id = b.id   GROUP BY tags_name  [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2c62f1ac4c542712dfa6ee5ab4129fde.php 第 9 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2c62f1ac4c542712dfa6ee5ab4129fde.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2c62f1ac4c542712dfa6ee5ab4129fde.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2c62f1ac4c542712dfa6ee5ab4129fde.php 第 68 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2c62f1ac4c542712dfa6ee5ab4129fde.php 第 68 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/2c62f1ac4c542712dfa6ee5ab4129fde.php 第 104 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/2c62f1ac4c542712dfa6ee5ab4129fde.php 第 104 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/2c62f1ac4c542712dfa6ee5ab4129fde.php 第 104 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/2c62f1ac4c542712dfa6ee5ab4129fde.php 第 104 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/2c62f1ac4c542712dfa6ee5ab4129fde.php 第 104 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/2c62f1ac4c542712dfa6ee5ab4129fde.php 第 104 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/2c62f1ac4c542712dfa6ee5ab4129fde.php 第 104 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/2c62f1ac4c542712dfa6ee5ab4129fde.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009030s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009082s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000139s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000410s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000453s ]
+
+[ 2016-11-08T21:23:12+08:00 ] 10.169.88.177 /home/archives/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+SQL: SHOW COLUMNS FROM `tp_article` [ RunTime:0.0006s ]
+SQL: SELECT `create_time`,COUNT( * ),GROUP_CONCAT(id) as id FROM `tp_article` GROUP BY FROM_UNIXTIME( create_time, "%Y年%m月%日" ) ORDER BY create_time DESC  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`title`,`create_time` FROM `tp_article` WHERE `id` IN ('33','32','31','30','29','28','27','26','25','34') ORDER BY create_time desc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`create_time` FROM `tp_article` WHERE `id` IN ('19','20','21','22','24') ORDER BY create_time desc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 9 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 68 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 68 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 83 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 83 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 83 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 83 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 83 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 83 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 83 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 83 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 83 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 83 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 83 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 83 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 83 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 83 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/3366c561da1773637233efd0b7e03a47.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010469s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010520s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000162s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000379s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000420s ]
+
+[ 2016-11-08T21:23:15+08:00 ] 10.169.88.177 /home/tags/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+SQL: SHOW COLUMNS FROM `tp_article_tags` [ RunTime:0.0006s ]
+SQL: SELECT b.id,b.tags_name,count(tags_id) as counts FROM `tp_article_tags` RIGHT join tp_tags as b on tags_id = b.id   GROUP BY tags_name  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2c62f1ac4c542712dfa6ee5ab4129fde.php 第 9 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2c62f1ac4c542712dfa6ee5ab4129fde.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2c62f1ac4c542712dfa6ee5ab4129fde.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2c62f1ac4c542712dfa6ee5ab4129fde.php 第 68 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2c62f1ac4c542712dfa6ee5ab4129fde.php 第 68 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/2c62f1ac4c542712dfa6ee5ab4129fde.php 第 104 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/2c62f1ac4c542712dfa6ee5ab4129fde.php 第 104 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/2c62f1ac4c542712dfa6ee5ab4129fde.php 第 104 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/2c62f1ac4c542712dfa6ee5ab4129fde.php 第 104 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/2c62f1ac4c542712dfa6ee5ab4129fde.php 第 104 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/2c62f1ac4c542712dfa6ee5ab4129fde.php 第 104 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/2c62f1ac4c542712dfa6ee5ab4129fde.php 第 104 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/2c62f1ac4c542712dfa6ee5ab4129fde.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008511s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008560s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000140s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000395s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000437s ]
+
+[ 2016-11-08T21:23:16+08:00 ] 10.169.88.177 /home/index/index/tags_id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 9 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007549s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007596s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000115s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000394s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000435s ]
+
+[ 2016-11-08T21:23:17+08:00 ] 10.169.88.177 /home/index/get_article_totalPage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+SQL: SHOW COLUMNS FROM `tp_article` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_article`  as a
+                        left join tp_user as u on create_user_id = u.id
+                        inner join tp_article_tags as t on t.article_id = a.id  WHERE `tags_id` = '2' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-11-08T21:23:19+08:00 ] 10.169.88.177 /home/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 9 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007863s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007910s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000131s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000396s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000439s ]
+
+[ 2016-11-08T21:23:20+08:00 ] 10.169.88.177 /home/index/get_article_totalPage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `tp_article` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: tags_id /usr/share/httpd/blog/Application/Home/Entity/Article.class.php 第 42 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_article` LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2016-11-08T21:23:25+08:00 ] 10.169.88.177 /home/index/details/id/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000558s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+SQL: SHOW COLUMNS FROM `tp_article` [ RunTime:0.0006s ]
+SQL: SELECT `title`,`reprint_url`,`content`,u.uname,FROM_UNIXTIME( create_time,'%Y-%m-%d %H:%i:%s' ) as create_time,FROM_UNIXTIME( create_time,'%m月%d,%Y' ) as create_time2,FROM_UNIXTIME( modify_time,'%Y-%m-%d %H:%i:%s' ) as modify_time FROM `tp_article` INNER JOIN tp_user as u on create_user_id = u.id  WHERE tp_article.id = '24' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 9 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 68 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 68 行.
+NOTIC: [8] Undefined variable: url /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 98 行.
+NOTIC: [8] Undefined variable: url /usr/share/httpd/blog/Application/Runtime/Cache/Home/37214a01e04274e0039680059f673b9e.php 第 98 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008093s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008136s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000136s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000430s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000478s ]
+
+[ 2016-11-08T21:23:28+08:00 ] 10.169.88.177 /home/tags/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000413s ]
+SQL: SHOW COLUMNS FROM `tp_article_tags` [ RunTime:0.0007s ]
+SQL: SELECT b.id,b.tags_name,count(tags_id) as counts FROM `tp_article_tags` RIGHT join tp_tags as b on tags_id = b.id   GROUP BY tags_name  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2c62f1ac4c542712dfa6ee5ab4129fde.php 第 9 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2c62f1ac4c542712dfa6ee5ab4129fde.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2c62f1ac4c542712dfa6ee5ab4129fde.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2c62f1ac4c542712dfa6ee5ab4129fde.php 第 68 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2c62f1ac4c542712dfa6ee5ab4129fde.php 第 68 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/2c62f1ac4c542712dfa6ee5ab4129fde.php 第 104 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/2c62f1ac4c542712dfa6ee5ab4129fde.php 第 104 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/2c62f1ac4c542712dfa6ee5ab4129fde.php 第 104 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/2c62f1ac4c542712dfa6ee5ab4129fde.php 第 104 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/2c62f1ac4c542712dfa6ee5ab4129fde.php 第 104 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/2c62f1ac4c542712dfa6ee5ab4129fde.php 第 104 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/2c62f1ac4c542712dfa6ee5ab4129fde.php 第 104 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /usr/share/httpd/blog/Application/Runtime/Cache/Home/2c62f1ac4c542712dfa6ee5ab4129fde.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009480s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009534s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000457s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000509s ]
+
+[ 2016-11-08T21:23:35+08:00 ] 10.169.88.177 /home/index/index/tags_id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 9 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008407s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008459s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000162s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000431s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000473s ]
+

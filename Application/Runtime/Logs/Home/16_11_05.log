@@ -1,0 +1,449 @@
+[ 2016-11-05T00:01:03+08:00 ] 10.169.88.177 /home/bing/add_imginfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000440s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_bing` WHERE `img_time` = '2016-11-05' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: error /usr/share/httpd/blog/Application/Model/Qiniu.class.php 第 56 行.
+NOTIC: [8] Undefined index: error /usr/share/httpd/blog/Application/Model/Qiniu.class.php 第 56 行.
+SQL: INSERT INTO `tp_bing` (`img_real_url`,`img_url`,`img_url_480`,`img_time`,`img_title`) VALUES ('http://s.cn.bing.net/az/hprichbg/rb/ApurimacRiverBridge_ZH-CN13064248684_1920x1080.jpg','http://ofsvy074q.bkt.clouddn.com/1920.2016-11-05.jpg','http://ofsvy074q.bkt.clouddn.com/480.2016-11-05.jpg','2016-11-05','阿普里马克河悬着的印加绳桥， 秘鲁 (© Wigbert Roth/Getty Images)') [ RunTime:0.0354s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000621s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000676s ]
+
+[ 2016-11-05T02:08:12+08:00 ] 10.169.88.177 /home/bing/get_smallImg_lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002945s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: start /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+NOTIC: [8] Undefined index: length /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+SQL: SELECT `id`,`img_time`,`img_url_480`,`img_title` FROM `tp_bing` ORDER BY img_time desc  [ RunTime:0.0016s ]
+
+[ 2016-11-05T02:08:12+08:00 ] 10.169.88.177 /home/bing/get_smallImg_lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: start /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+NOTIC: [8] Undefined index: length /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+SQL: SELECT `id`,`img_time`,`img_url_480`,`img_title` FROM `tp_bing` ORDER BY img_time desc  [ RunTime:0.0027s ]
+
+[ 2016-11-05T02:08:33+08:00 ] 10.169.88.177 /home/bing/get_smallImg_lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: start /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+NOTIC: [8] Undefined index: length /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+SQL: SELECT `id`,`img_time`,`img_url_480`,`img_title` FROM `tp_bing` ORDER BY img_time desc  [ RunTime:0.0006s ]
+
+[ 2016-11-05T02:08:38+08:00 ] 10.169.88.177 /home/bing/get_smallImg_lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: start /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+NOTIC: [8] Undefined index: length /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+SQL: SELECT `id`,`img_time`,`img_url_480`,`img_title` FROM `tp_bing` ORDER BY img_time desc  [ RunTime:0.0005s ]
+
+[ 2016-11-05T02:08:44+08:00 ] 10.169.88.177 /home/bing/get_smallImg_lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: start /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+NOTIC: [8] Undefined index: length /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+SQL: SELECT `id`,`img_time`,`img_url_480`,`img_title` FROM `tp_bing` ORDER BY img_time desc  [ RunTime:0.0015s ]
+
+[ 2016-11-05T02:08:44+08:00 ] 10.169.88.177 /home/bing/get_smallImg_lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: start /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+NOTIC: [8] Undefined index: length /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+SQL: SELECT `id`,`img_time`,`img_url_480`,`img_title` FROM `tp_bing` ORDER BY img_time desc  [ RunTime:0.0026s ]
+
+[ 2016-11-05T02:10:35+08:00 ] 10.169.88.177 /home/bing/get_smallImg_lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: start /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+NOTIC: [8] Undefined index: length /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+SQL: SELECT `id`,`img_time`,`img_url_480`,`img_title` FROM `tp_bing` ORDER BY img_time desc  [ RunTime:0.0013s ]
+
+[ 2016-11-05T02:10:43+08:00 ] 10.169.88.177 /home/bing/get_smallImg_lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000435s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: start /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+NOTIC: [8] Undefined index: length /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+SQL: SELECT `id`,`img_time`,`img_url_480`,`img_title` FROM `tp_bing` ORDER BY img_time desc  [ RunTime:0.0005s ]
+
+[ 2016-11-05T02:10:52+08:00 ] 10.169.88.177 /home/bing/get_smallImg_lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: start /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+NOTIC: [8] Undefined index: length /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+SQL: SELECT `id`,`img_time`,`img_url_480`,`img_title` FROM `tp_bing` ORDER BY img_time desc  [ RunTime:0.0015s ]
+
+[ 2016-11-05T02:10:52+08:00 ] 10.169.88.177 /home/bing/get_smallImg_lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: start /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+NOTIC: [8] Undefined index: length /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+SQL: SELECT `id`,`img_time`,`img_url_480`,`img_title` FROM `tp_bing` ORDER BY img_time desc  [ RunTime:0.0027s ]
+
+[ 2016-11-05T02:11:44+08:00 ] 10.169.88.177 /home/bing/get_smallImg_lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: start /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+NOTIC: [8] Undefined index: length /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+SQL: SELECT `id`,`img_time`,`img_url_480`,`img_title` FROM `tp_bing` ORDER BY img_time desc  [ RunTime:0.0006s ]
+
+[ 2016-11-05T02:11:44+08:00 ] 10.169.88.177 /home/bing/get_smallImg_lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: start /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+NOTIC: [8] Undefined index: length /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+SQL: SELECT `id`,`img_time`,`img_url_480`,`img_title` FROM `tp_bing` ORDER BY img_time desc  [ RunTime:0.0036s ]
+
+[ 2016-11-05T02:46:09+08:00 ] 10.169.88.177 /home/bing/get_smallImg_lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: start /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+NOTIC: [8] Undefined index: length /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+SQL: SELECT `id`,`img_time`,`img_url_480`,`img_title` FROM `tp_bing` ORDER BY img_time desc  [ RunTime:0.0015s ]
+
+[ 2016-11-05T02:46:09+08:00 ] 10.169.88.177 /home/bing/get_smallImg_lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000435s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: start /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+NOTIC: [8] Undefined index: length /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+SQL: SELECT `id`,`img_time`,`img_url_480`,`img_title` FROM `tp_bing` ORDER BY img_time desc  [ RunTime:0.0027s ]
+
+[ 2016-11-05T02:55:45+08:00 ] 10.169.88.177 /home/bing/get_smallImg_lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: start /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+NOTIC: [8] Undefined index: length /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+SQL: SELECT `id`,`img_time`,`img_url_480`,`img_title` FROM `tp_bing` ORDER BY img_time desc  [ RunTime:0.0022s ]
+
+[ 2016-11-05T02:55:45+08:00 ] 10.169.88.177 /home/bing/get_smallImg_lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000442s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: start /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+NOTIC: [8] Undefined index: length /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+SQL: SELECT `id`,`img_time`,`img_url_480`,`img_title` FROM `tp_bing` ORDER BY img_time desc  [ RunTime:0.0004s ]
+
+[ 2016-11-05T02:56:38+08:00 ] 10.169.88.177 /home/bing/get_smallImg_lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: start /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+NOTIC: [8] Undefined index: length /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+SQL: SELECT `id`,`img_time`,`img_url_480`,`img_title` FROM `tp_bing` ORDER BY img_time desc  [ RunTime:0.0016s ]
+
+[ 2016-11-05T02:56:38+08:00 ] 10.169.88.177 /home/bing/get_smallImg_lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000431s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: start /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+NOTIC: [8] Undefined index: length /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+SQL: SELECT `id`,`img_time`,`img_url_480`,`img_title` FROM `tp_bing` ORDER BY img_time desc  [ RunTime:0.0031s ]
+
+[ 2016-11-05T02:57:39+08:00 ] 10.169.88.177 /home/bing/get_smallImg_lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: start /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+NOTIC: [8] Undefined index: length /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+SQL: SELECT `id`,`img_time`,`img_url_480`,`img_title` FROM `tp_bing` ORDER BY img_time desc  [ RunTime:0.0017s ]
+
+[ 2016-11-05T02:57:39+08:00 ] 10.169.88.177 /home/bing/get_smallImg_lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000442s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: start /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+NOTIC: [8] Undefined index: length /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+SQL: SELECT `id`,`img_time`,`img_url_480`,`img_title` FROM `tp_bing` ORDER BY img_time desc  [ RunTime:0.0028s ]
+
+[ 2016-11-05T03:40:44+08:00 ] 10.169.88.177 /home/bing/get_smallImg_lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000495s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: start /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+NOTIC: [8] Undefined index: length /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+SQL: SELECT `id`,`img_time`,`img_url_480`,`img_title` FROM `tp_bing` ORDER BY img_time desc  [ RunTime:0.0006s ]
+
+[ 2016-11-05T03:40:44+08:00 ] 10.169.88.177 /home/bing/get_smallImg_lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: start /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+NOTIC: [8] Undefined index: length /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+SQL: SELECT `id`,`img_time`,`img_url_480`,`img_title` FROM `tp_bing` ORDER BY img_time desc  [ RunTime:0.0005s ]
+
+[ 2016-11-05T03:41:04+08:00 ] 10.169.88.177 /home/bing/get_smallImg_lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: start /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+NOTIC: [8] Undefined index: length /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+SQL: SELECT `id`,`img_time`,`img_url_480`,`img_title` FROM `tp_bing` ORDER BY img_time desc  [ RunTime:0.0008s ]
+
+[ 2016-11-05T03:41:04+08:00 ] 10.169.88.177 /home/bing/get_smallImg_lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006536s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: start /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+NOTIC: [8] Undefined index: length /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+SQL: SELECT `id`,`img_time`,`img_url_480`,`img_title` FROM `tp_bing` ORDER BY img_time desc  [ RunTime:0.0007s ]
+
+[ 2016-11-05T06:23:50+08:00 ] 10.169.88.177 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 9 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 23 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+NOTIC: [8] Undefined variable: web_title /usr/share/httpd/blog/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009217s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009262s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000128s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000432s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000479s ]
+
+[ 2016-11-05T12:47:30+08:00 ] 10.169.88.177 /home/bing/get_smallImg_lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: start /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+NOTIC: [8] Undefined index: length /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+SQL: SELECT `id`,`img_time`,`img_url_480`,`img_title` FROM `tp_bing` ORDER BY img_time desc  [ RunTime:0.0006s ]
+
+[ 2016-11-05T12:47:30+08:00 ] 10.169.88.177 /home/bing/get_smallImg_lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: start /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+NOTIC: [8] Undefined index: length /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+SQL: SELECT `id`,`img_time`,`img_url_480`,`img_title` FROM `tp_bing` ORDER BY img_time desc  [ RunTime:0.0004s ]
+
+[ 2016-11-05T12:48:22+08:00 ] 10.169.88.177 /home/bing/get_smallImg_lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003511s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: start /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+NOTIC: [8] Undefined index: length /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+SQL: SELECT `id`,`img_time`,`img_url_480`,`img_title` FROM `tp_bing` ORDER BY img_time desc  [ RunTime:0.0006s ]
+
+[ 2016-11-05T12:48:22+08:00 ] 10.169.88.177 /home/bing/get_smallImg_lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: start /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+NOTIC: [8] Undefined index: length /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+SQL: SELECT `id`,`img_time`,`img_url_480`,`img_title` FROM `tp_bing` ORDER BY img_time desc  [ RunTime:0.0038s ]
+
+[ 2016-11-05T12:53:53+08:00 ] 10.169.88.177 /home/bing/get_smallImg_lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000429s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: start /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+NOTIC: [8] Undefined index: length /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+SQL: SELECT `id`,`img_time`,`img_url_480`,`img_title` FROM `tp_bing` ORDER BY img_time desc  [ RunTime:0.0016s ]
+
+[ 2016-11-05T12:53:53+08:00 ] 10.169.88.177 /home/bing/get_smallImg_lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: start /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+NOTIC: [8] Undefined index: length /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+SQL: SELECT `id`,`img_time`,`img_url_480`,`img_title` FROM `tp_bing` ORDER BY img_time desc  [ RunTime:0.0025s ]
+
+[ 2016-11-05T14:30:29+08:00 ] 10.169.88.177 /home/bing/get_smallImg_lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003450s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: start /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+NOTIC: [8] Undefined index: length /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+SQL: SELECT `id`,`img_time`,`img_url_480`,`img_title` FROM `tp_bing` ORDER BY img_time desc  [ RunTime:0.0006s ]
+
+[ 2016-11-05T14:30:29+08:00 ] 10.169.88.177 /home/bing/get_smallImg_lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: start /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+NOTIC: [8] Undefined index: length /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+SQL: SELECT `id`,`img_time`,`img_url_480`,`img_title` FROM `tp_bing` ORDER BY img_time desc  [ RunTime:0.0038s ]
+
+[ 2016-11-05T14:31:02+08:00 ] 10.169.88.177 /home/bing/get_smallImg_lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000696s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: start /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+NOTIC: [8] Undefined index: length /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+SQL: SELECT `id`,`img_time`,`img_url_480`,`img_title` FROM `tp_bing` ORDER BY img_time desc  [ RunTime:0.0006s ]
+
+[ 2016-11-05T14:31:02+08:00 ] 10.169.88.177 /home/bing/get_smallImg_lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000451s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: start /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+NOTIC: [8] Undefined index: length /usr/share/httpd/blog/Application/Home/Entity/Bing.class.php 第 25 行.
+SQL: SELECT `id`,`img_time`,`img_url_480`,`img_title` FROM `tp_bing` ORDER BY img_time desc  [ RunTime:0.0005s ]
+

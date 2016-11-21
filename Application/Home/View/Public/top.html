@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <if condition="$blog_title eq null">
+        <title>{$web_title|getTitle}</title>
+        <!--<title>{:U('Common/getTitle')}</title>-->
+        <else />
+        <title>{$blog_title} - {$web_title|getTitle}</title>
+    </if>
+    <link rel="stylesheet" href="__STATIC__/css/bootstrap.css">
+    <link rel="stylesheet" href="__STATIC__/css/app.min.css">
+    <link rel="stylesheet" href="__STATIC__/css/font-awesome.min.css">
+    <link rel="stylesheet" href="__STATIC__/css/animate.css">
+    <link rel="stylesheet" href="__STATIC__/css/simple-line-icons.css">
+    <link rel="stylesheet" href="__HTML__/css/common.css">
+</head>
+<body class="app">

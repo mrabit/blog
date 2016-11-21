@@ -1,0 +1,156 @@
+<include file="Home@Public/top" />
+<include file="Home@Public/side" />
+<style>
+    .bing_main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .bing_main::after{
+        content: '';
+        flex-grow: 100000;
+    }
+    .bing_article{
+        position: relative;
+        overflow: hidden;
+        flex-grow: 99999999999999;
+        margin: 2px;
+        background-color: violet;
+        height: 150px;
+        cursor: pointer;
+    }
+    .bing_article img{
+        height: 150px;
+        object-fit: cover;
+        max-width: 100%;
+        min-width: 100%;
+        vertical-align: bottom;
+        display: block;
+        transition: opacity .2s ease-in-out;
+    }
+
+    .bing_article:hover img {
+        opacity: .5;
+    }
+    .bing_article::after,
+    .bing_article::before {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 50%;
+        transition: transform .4s ease-out;
+        color: #fff;
+    }
+    .bing_article::after {
+        content: attr(data-title);
+        top: 0;
+        transform: translateY(-100%) scale(.8);
+        background: rgba(0,0,0,.4);
+        font-size: .5rem;
+        font-weight: 300;
+        font-family: Merriweather, serif;
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .bing_article::before {
+        content: attr(data-description);
+        top: 50%;
+        transform: translateY(100%) scale(.8);
+        background: rgba(107,38,68,.6);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        color: #f1f1f1;
+        font-size: .5rem;
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .bing_article:hover::after,
+    .bing_article:hover::before {
+        transform: translateY(0%) scale(1);
+    }
+    @media screen and (max-width: 768px){
+        .bing_article::before {
+            transform: translateY(0%) scale(1);
+            top:70%;
+            height: 30%;
+        }
+        .bing_article::after{
+            display: none;
+        }
+        .bing_article:hover img {
+            opacity: 1;
+        }
+    }
+</style>
+
+<section class="content">
+    <div class="wrapper">
+        <section class="row padder">
+            <article class="col-xs-12 padder-v">
+                <p class="article-title h2">Bing每日美图</p>
+                <div class="entry-content m-t-md">
+                    <section class="bing_main">
+
+                    </section>
+                    <div id="img_loading" class="m-t-md" style="display: none">
+                        <div class="col-md-12 text-center">
+                            <i class="fa fa-spin fa-spinner fa-2x"></i>
+                            <div class="clear m-t-xs">
+                                <span class="text-xs">列表正在加载，请稍候...</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="warning" class="m-t-md" style="display: none">
+                        <p class="text-center">已到最后一页</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </div>
+</section>
+<include file="Home@Public/footer" />
+<script>
+    require(["script","lazyload"], function ($) {
+//        $(".bing_article img").lazyload({effect: "show"});
+
+        //当前页数
+        var currPage = 0;
+        //每页条数
+        var pageSize = 9;
+        //总页数
+        var totalPage = 0;
+        //是否已在加载数据
+        $.ajax_loading = false;
+        //获取总页数
+        $.post("{:U('/home/bing/get_img_totalPage')}", {pageSize:pageSize}, function (d) {
+            totalPage = d.result;
+        },"json");
+
+        //首次加载
+        var param = {start:currPage*pageSize,length:pageSize};
+        $.load_img_lists_html("{:U('/home/bing/lists')}",param ,500,currPage);
+
+        $(window).scroll(function () {
+            /*判断窗体高度与竖向滚动位移大小相加 是否 超过内容页高度*/
+            if (($(window).height() + $(window).scrollTop()) >= $("body").height()) {
+                if($.ajax_loading == false){
+                    if(currPage >= totalPage - 1){
+                        $("#warning p").text("已到最后一页");
+                        $("#warning").fadeIn();
+                        return false;
+                    }
+                    currPage++;
+                    var param = {start:currPage*pageSize,length:pageSize};
+                    $.load_img_lists_html("{:U('/home/bing/lists')}",param ,500,currPage);
+                }else{
+                    console.log("执行ing...")
+                }
+            }
+        });
+    });
+</script>

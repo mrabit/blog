@@ -1,0 +1,128 @@
+/*html{*/
+    /*background: transparent!important;*/
+/*}*/
+/*.app-aside {*/
+    /*position: fixed;*/
+    /*top: 50px;*/
+    /*height: 100vh;*/
+/*}*/
+.widget {
+    background: #ffffff none repeat scroll 0 0;
+    float: left;
+    /*margin-top: 25px;*/
+    position: relative;
+    width: 100%;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    -ms-border-radius: 1px;
+    -o-border-radius: 1px;
+    border-radius: 1px;
+}
+.weather-widget {
+    background-image: url(http://cn.bing.com/ImageResolution.aspx?w=320&h=568&t=2016910);
+    background-size: cover;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    float: left;
+    min-height: 300px;
+    text-align: center;
+    width: 100%;
+    z-index: 0;
+}
+
+.widget-modal{
+    position: absolute;top:0;left: 0;width: 100%;height: 100%;opacity: 0.3;background: black;z-index: -1;
+}
+
+.widget-controls {
+    padding-right: 15px;
+    padding-top: 13px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    z-index: 1;
+}
+
+.weather-infos {
+    float: left;
+    padding: 0 40px;
+    position: absolute;
+    text-align: left;
+    width: 100%;
+    bottom: 20px;
+}
+
+.weather-tem {
+    color: #ffffff;
+    float: left;
+    font-family: Montserrat;
+    font-size: 31px;
+    margin-right: 33px;
+    position: relative;
+}
+.weather-widget canvas {
+    display: inline-block;
+    margin-top: 70px;
+    z-index: 5;
+    position: relative;
+}
+
+.weather-infos > h3 {
+    color: #ffffff;
+    float: left;
+    font-family: Montserrat;
+    font-size: 20px;
+    margin: 0;
+}
+
+.weather-infos > h3 > i {
+    display: table;
+    font-size: 13px;
+    font-style: normal;
+    margin-top: 6px;
+    color: #fff;
+}
+.purple, .tckt-status > span.new {
+    background-color: #8777ff;
+}
+.weather-date {
+    height: 60px;
+    position: absolute;
+    right: 0;
+    width: 60px;
+}
+.weather-tem::before {
+    border: 2px solid #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    content: "";
+    height: 10px;
+    position: absolute;
+    right: -13px;
+    top: -3px;
+    width: 10px;
+}
+
+.weather-date > span {
+    color: #fff;
+    float: left;
+    font-family: Roboto;
+    font-size: 14px;
+    margin: 10px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.weather-date > span > strong {
+    float: left;
+    font-size: 20px;
+    letter-spacing: -1px;
+    line-height: 13px;
+    margin-top: 3px;
+    width: 100%;
+}
+

@@ -1,0 +1,16 @@
+[ 2016-11-12T00:01:02+08:00 ] 10.169.88.177 /home/bing/add_imginfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001709s ]
+SQL: SHOW COLUMNS FROM `tp_bing` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tp_bing` WHERE `img_time` = '2016-11-12' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: error /usr/share/httpd/blog/Application/Model/Qiniu.class.php 第 56 行.
+NOTIC: [8] Undefined index: error /usr/share/httpd/blog/Application/Model/Qiniu.class.php 第 56 行.
+SQL: INSERT INTO `tp_bing` (`img_real_url`,`img_url`,`img_url_480`,`img_time`,`img_title`) VALUES ('http://s.cn.bing.net/az/hprichbg/rb/IgelHerbst_ZH-CN7813320285_1920x1080.jpg','http://ofsvy074q.bkt.clouddn.com/1920.2016-11-12.jpg','http://ofsvy074q.bkt.clouddn.com/480.2016-11-12.jpg','2016-11-12','埃姆斯兰的一只欧洲刺猬，德国 (© Erhard Nerger/Alamy)') [ RunTime:0.0321s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000565s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000621s ]
+

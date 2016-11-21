@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+  Options +FollowSymlinks
+  RewriteEngine On
+
+  RewriteRule ^/?(bing).*$   index.php?s=/home/bing/bing [L]
+
+
+
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^/?(.*)$ index.php?s=/$1 [QSA,PT,L]
+</IfModule>

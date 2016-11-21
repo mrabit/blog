@@ -1,0 +1,294 @@
+<include file="Admin@Public/top"/>
+<style>
+    .form-group {
+        overflow: hidden;
+    }
+
+    /* this CSS is not part of the widget, it is here just as an example of the demo page styling.... Don't copy this one, roll your own. One
+ * of the key things about the widget is that it allows you to do your own styling!
+ */
+
+    #editor {
+        overflow-y: scroll;
+        height: 300px;
+        max-height: 300px
+    }
+
+    .bootstrap-tagsinput {
+        float: left;
+    }
+
+    .img_logo {
+        width: 200px;
+    }
+</style>
+<include file="Admin@Public/side"/>
+<section class="app-content">
+    <div class="bg-light lter b-b wrapper-md">
+        <h1 class="m-n font-thin h3">发布文章</h1>
+    </div>
+    <div class="wrapper">
+        <form class="form-horizontal" name="article_form" id="article_form" method="get" ng-controller="article_form">
+            <div class="form-group">
+                <label class="col-sm-2 control-label">logo:</label>
+
+                <div class="img_logo" id="img_logo">
+
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">文章标题:</label>
+
+                <div class="col-sm-10">
+                    <input type="text" ng-model="title" name="title" required class="form-control" placeholder="输入你的标题">
+
+                    <div ng-messages="article_form.title.$error" class="help-block m-b-none text-danger m-l-xs">
+                        <div ng-if="article_form.submitted">
+                            <div ng-message="required">请输入文章标题,这是必须的,由不得你</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line line-dashed b-b line-lg pull-in"></div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">转载地址:</label>
+
+                <div class="col-sm-10">
+                    <input type="url" ng-model="reprint_url" name="reprint_url" class="form-control"
+                           placeholder="输入文章转载地址,空则不为转载">
+
+                    <div ng-messages="article_form.reprint_url.$error" role="alert"
+                         class="help-block m-b-none text-danger m-l-xs">
+                        <div ng-message="url">麻烦输入正确链接地址</div>
+                    </div>
+                </div>
+            </div>
+            <div class="line line-dashed b-b line-lg pull-in"></div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">文章正文:</label>
+
+                <div class="col-sm-10">
+                    <div class="hero-unit">
+                        <div class="btn-toolbar m-b-sm btn-editor" data-role="editor-toolbar" data-target="#editor">
+
+                            <div class="btn-group">
+                                <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" title="Font"><i
+                                        class="fa fa-font"></i><b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                </ul>
+                            </div>
+                            <div class="btn-group dropdown" dropdown="">
+                                <a class="btn btn-default" dropdown-toggle="" data-toggle="dropdown"
+                                   tooltip="Font Size"><i class="fa fa-text-height"></i>&nbsp;<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="" data-edit="fontSize 5" style="font-size:24px">Huge</a></li>
+                                    <li><a href="" data-edit="fontSize 3" style="font-size:18px">Normal</a></li>
+                                    <li><a href="" data-edit="fontSize 1" style="font-size:14px">Small</a></li>
+                                </ul>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn btn-default" data-edit="bold"><i class="fa fa-bold"></i></a>
+                                <a class="btn btn-default" data-edit="italic" tooltip="Italic (Ctrl/Cmd+I)"><i
+                                        class="fa fa-italic"></i></a>
+                                <a class="btn btn-default" data-edit="strikethrough" tooltip="Strikethrough"><i
+                                        class="fa fa-strikethrough"></i></a>
+                                <a class="btn btn-default" data-edit="underline" tooltip="Underline (Ctrl/Cmd+U)"><i
+                                        class="fa fa-underline"></i></a>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn btn-default" data-edit="insertunorderedlist" tooltip="Bullet list"><i
+                                        class="fa fa-list-ul"></i></a>
+                                <a class="btn btn-default" data-edit="insertorderedlist" tooltip="Number list"><i
+                                        class="fa fa-list-ol"></i></a>
+                                <a class="btn btn-default" data-edit="outdent" tooltip="Reduce indent (Shift+Tab)"><i
+                                        class="fa fa-dedent"></i></a>
+                                <a class="btn btn-default" data-edit="indent" tooltip="Indent (Tab)"><i
+                                        class="fa fa-indent"></i></a>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn btn-default btn-info" data-edit="justifyleft"
+                                   tooltip="Align Left (Ctrl/Cmd+L)"><i class="fa fa-align-left"></i></a>
+                                <a class="btn btn-default" data-edit="justifycenter" tooltip="Center (Ctrl/Cmd+E)"><i
+                                        class="fa fa-align-center"></i></a>
+                                <a class="btn btn-default" data-edit="justifyright"
+                                   tooltip="Align Right (Ctrl/Cmd+R)"><i class="fa fa-align-right"></i></a>
+                                <a class="btn btn-default" data-edit="justifyfull" tooltip="Justify (Ctrl/Cmd+J)"><i
+                                        class="fa fa-align-justify"></i></a>
+                            </div>
+                            <div class="btn-group dropdown" dropdown="">
+                                <a class="btn btn-default" dropdown-toggle="" tooltip="Hyperlink"><i
+                                        class="fa fa-link"></i></a>
+
+                                <div class="dropdown-menu">
+                                    <div class="input-group m-l-xs m-r-xs">
+                                        <input class="span2" placeholder="URL" type="text" data-edit="createLink"/>
+
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-sm btn-default" type="button">Add</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="btn btn-default" data-edit="unlink" title="Remove Hyperlink"><i
+                                        class="fa fa-cut"></i></a>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn btn-default" data-edit="insertImagea"
+                                   tooltip="Insert picture (or just drag &amp; drop)" id="pictureBtn"><i
+                                        class="fa fa-picture-o"></i></a>
+                                <!--<button type="button" class="btn btn-default" data-edit="insertImage" id="insertImage"><i class="fa fa-picture-o"></i></button>-->
+                                <!--<input type="file" data-edit="insertImage" style="position:absolute; opacity:0; width:41px; height:34px">-->
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn btn-default" data-edit="undo" tooltip="Undo (Ctrl/Cmd+Z)"><i
+                                        class="fa fa-undo"></i></a>
+                                <a class="btn btn-default" data-edit="redo" tooltip="Redo (Ctrl/Cmd+Y)"><i
+                                        class="fa fa-repeat"></i></a>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn btn-default" data-edit="split_line" id="split_line" tooltip="分割线"><i
+                                        class="fa fa-repeat"></i></a>
+                            </div>
+                        </div>
+                        <div id="editor" class="wrapper form-control">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line line-dashed b-b line-lg pull-in"></div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">标签填写:</label>
+
+                <div class="col-sm-10">
+                    <select multiple id="article_tags" class="pull-left"></select>
+
+                    <div class="input-group pill-left">
+                        <select id="select_value" ng-model="select_value" class="form-control m-b"
+                                style="width: 150px;">
+                            <option value="" disabled selected>选择已有标签</option>
+                            <volist name="select_group" id="vo">
+                                <option value='"tags_name":"{$vo.tags_name}","id":"{$vo.id}"'>{$vo.tags_name}</option>
+                            </volist>
+                        </select>
+                        <span class="input-group-btn" style="position: absolute;left: 150px;">
+                            <button class="btn btn-default" ng-click="add_tags()" type="button">选择</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-12 text-right">
+                    <button type="button" class="btn btn-primary m-l-sm m-r-sm"
+                            ng-disabled="article_form.$invalid && article_form.submitted" ng-click="submit_data()">发布文章
+                    </button>
+                    <button type="reset" class="btn btn-default m-l-sm m-r-sm">取消</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+<include file="Admin@Public/footer"/>
+<script>
+    //    var weather_url = "{:U('/api/weather/get_weather')}";
+    require(["jquery", "angular", "init-angular", "bootstrap-wysiwyg", "tagsinput", 'swal'], function ($, angular, app) {
+
+        /***
+         * 页面加载loading
+         */
+        app.controller('page_loading', function ($scope) {
+            $scope.page_loading = false;
+        });
+        app.controller('article_form', function ($scope, $http) {
+
+            $scope.add_tags = function () {
+                if (!$scope.select_value) return false;
+                var json = JSON.parse("{" + $scope.select_value + "}");
+                $('#article_tags').tagsinput('add', {"tags_name": json.tags_name, "id": json.id});
+            };
+            $scope.submitted = false;
+            $scope.submit_data = function () {
+                if (!$scope.article_form.$valid) {
+                    $scope.article_form.submitted = true;
+                    return false;
+                }
+                var edit_html = $.html_encode($("#editor").html()).split('<div class="line line-dashed b-b line-lg"></div>');
+                var brief_introduction = edit_html[0];
+                if (edit_html.length < 2) {
+                    brief_introduction = $('<div>' + brief_introduction + '</div>').text().substring(0, 80);
+                }
+                var json = {
+                    title: $scope.title,
+                    reprint_url: $scope.reprint_url,
+                    brief_introduction: $('<div>' + brief_introduction + '</div>').html(), //标签补全
+                    content: edit_html[0] + (edit_html[1] || ""),
+                    tags: $("#article_tags").tagsinput('items') || ""
+                };
+                $http({
+                    method: 'POST',
+                    url: "{:U('/admin/article/insert_article')}",
+                    data: json
+                }).success(function (respone) {
+                    if (respone.code == "OK") {
+                        $.swal_timer({
+                            title: "文章添加成功!",
+                            type: "success",
+                            func: function () {
+                                window.location.href = "{:U('/admin/article/lists')}";
+                            },
+                            dismiss: function () {
+                                window.location.href = "{:U('/admin/article/lists')}";
+                            }
+                        });
+                    }
+                });
+//                window.sweetHTML = '<div class="row">' +
+//                        '<div class="col-xs-6">asd</div>' +
+//                        '<div class="col-xs-6">qwe</div>' +
+//                        '</div>'
+//                var a = new swal({
+//                    html: window.sweetHTML
+//                });
+            }
+        });
+
+        angular.bootstrap(document, ["ytjhApp"]);
+
+        var wysiwyg = $('#editor').wysiwyg({
+//            hotKeys: {
+//                'ctrl+b meta+b': 'bold',
+//                'ctrl+i meta+i': 'italic',
+//                'ctrl+u meta+u': 'underline',
+//                'ctrl+z meta+z': 'undo',
+//                'ctrl+y meta+y meta+shift+z': 'redo'
+//            },
+            uploadImgUrl: "{:U('/home/upload/getUpLoad')}"
+        });
+
+        $("#article_tags").tagsinput({
+            itemValue: 'id',
+            itemText: 'tags_name',
+            maxTags: 5,
+            trimValue: true
+        });
+        //保存已存在字段
+        window.tags_arr = new Map();
+        $.each($("#select_value option"), function (k, v) {
+            if ($(v).val()) {
+                var temp = JSON.parse('{' + $(v).val() + '}');
+                window.tags_arr.set(temp["tags_name"], temp);
+            }
+        });
+
+//        $('#article_tags').tagsinput('add', { "text": "Amsterdam",value:"1"});
+
+//        require(["parsley",'parsley.extend'], function () {
+//            $("#article_form").parsley(window.ParsleyConfig).on("form:submit", function () {
+//                alert("成功");
+//                return false;
+//            });
+//        });
+
+
+        $(".main").fadeIn();
+    });
+</script>

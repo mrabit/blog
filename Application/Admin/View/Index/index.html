@@ -1,0 +1,106 @@
+<include file="Admin@Public/top"/>
+<link rel="stylesheet" href="__ADMIN__/css/index.css">
+<style>
+    .masonry_item {
+        float: left;
+    }
+
+    .masonry_item .b-a {
+        min-height: 200px;
+    }
+</style>
+<include file="Admin@Public/side"/>
+<section class="app-content index-content">
+    <div class="wrapper">
+        <div class="row masonry_main">
+            <div class="col-lg-4 col-sm-6 col-xs-12 masonry_item" ng-controller="recent_article">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        24h文章({{article_length}})
+                    </div>
+                    <div class="panel-body" style="overflow: hidden;width: auto;min-height: 50px;position:relative;max-height: 400px;overflow-y: scroll;">
+                        <div ng-show="article_loading" class="common_loading row m-t-n-md" style="height: 102%;">
+                            <div class="col-md-12 text-center">
+                                <i class="fa fa-spin fa-spinner fa-2x"></i>
+
+                                <div class="clear m-t-xs">
+                                    <span class="text-xs">页面正在加载，请稍候...</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div ng-if="article_list">
+                            <article ng-repeat="data in article_list">
+                                <div class="media" article>
+                                    <div class="media-body">
+                                        <div class="pull-right text-center text-muted">
+                                        <strong class="h4">{{ date | date:'dd' }}</strong><br>
+                                        <small class="label bg-light">{{date | date:"MMM"}}</small>
+                                        </div>
+                                        <a href="{{url}}" target="_blank" class="h4 text-success text-ellipsis-1" title="{{title}}" style="width: 80%">{{title}}</a>
+                                        <small class="block m-t-sm">{{user}}, {{time}}</small>
+                                    </div>
+                                </div>
+                                <div class="line line-dashed b-b"></div>
+                            </article>
+                        </div>
+                        <div ng-if="!article_list">
+                            <p class="text-center m-t-md">暂无数据</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-xs-12 masonry_item" ng-controller="date_time">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        当前时间
+                    </div>
+                    <div class="panel-body">
+                        {{time}}
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-xs-12 masonry_item" ng-controller="widget_weather">
+                <div class="widget weather-widget"
+                     style="background-image: url(http://cn.bing.com/ImageResolution.aspx?w=320&h=568&t={$time|str2time});">
+                    <div ng-show="weather_loading" class="common_loading">
+                        <div class="col-md-12 text-center">
+                            <i class="fa fa-spin fa-spinner fa-2x"></i>
+
+                            <div class="clear m-t-xs">
+                                <span class="text-xs">页面正在加载，请稍候...</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widget-modal"></div>
+                    <div class="widget-controls">
+                        <span class="refresh-content"><i class="fa fa-refresh" ng-click="get_weather()"></i></span>
+                    </div><!-- Widget Controls -->
+                    <canvas id="rain" width="64" height="64"></canvas>
+                    <div class="weather-infos">
+                        <span class="weather-tem">{{temp}}</span>
+
+                        <h3>{{weather}}
+                            <i>{{city}}, {{pinyin}}</i>
+                        </h3>
+
+                        <div class="weather-date purple">
+                            <span>{{ date | date:'MMM' }}<strong>{{ date | date:'dd' }}</strong></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-xs-12 masonry_item">
+                <div class="b-a">345</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<include file="Admin@Public/footer"/>
+<script>
+    var weather_url = "{:U('/api/weather/get_weather')}";
+    var recent_article = "{:U('/admin/index/get_article_list_by_time')}";
+    require(["script", "angular", "__ADMIN__/js/index.controller.js"], function ($, angular) {
+        angular.bootstrap(document, ["ytjhApp"]);
+    });
+</script>

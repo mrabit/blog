@@ -1,0 +1,29 @@
+.article-title {
+    color: #666;
+    /*text-indent: .3em;*/
+}
+
+article blockquote {
+    background-color: #E1E9DC;
+    border-left: 5px solid #2479CC;
+    padding: 15px 20px;
+}
+
+article .entry-content,.details_info {
+    font-size: 16px;
+    line-height: 1.8;
+    overflow: hidden;
+}
+
+article a {
+    color: #2479CC;
+}
+
+.text-ellipsis {
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}

@@ -1,0 +1,24 @@
+<include file="Home@Public/top" />
+<include file="Home@Public/side" />
+<section class="content">
+    <div class="wrapper">
+        <section class="row padder">
+            <article class="col-xs-12 padder-v">
+                <p class="article-title h2">归档</p>
+                <div class="entry-content m-t-md">
+                    <volist name="article_list" id="vo">
+                        <article class="list-group archives_list">
+                            <p class="h4 font-bold month_time"><time datetime="{$vo.archives_time|dateFormat=###,'Y年m月'}">{$vo.archives_time|dateFormat=###,'Y年m月'}</time>({$vo.data_length})</p>
+                            <ul class="padder-lg padder-v  m-l-md">
+                                <volist name="vo.aaData" id="data">
+                                    <li> <a href="{:U('home/index/details',array('id'=>$data[id]))}" title="{$data.title}">{$data.title}</a><span class="date m-l-sm hidden-xs">{$data.create_time|dateFormat=###,'Y-m-d'}</span></li>
+                                </volist>
+                            </ul>
+                        </article>
+                    </volist>
+                </div>
+            </article>
+        </section>
+    </div>
+</section>
+<include file="Home@Public/footer" />

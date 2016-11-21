@@ -1,0 +1,67 @@
+<include file="Home@Public/top" />
+<include file="Home@Public/side" />
+<!--<link rel="stylesheet" href="__HTML__/css/index.css">-->
+<section class="content" style="">
+    <!--<include file="Home@Public/loading" />-->
+    <div class="wrapper" id="main">
+        <section class="row padder" >
+            <div id="lists_content">
+
+            </div>
+            <div id="article_loading" style="display: none">
+                <div class="col-md-12 text-center">
+                    <i class="fa fa-spin fa-spinner fa-2x"></i>
+                    <div class="clear m-t-xs">
+                        <span class="text-xs">列表正在加载，请稍候...</span>
+                    </div>
+                </div>
+            </div>
+            <div id="warning" style="display: none">
+                <p class="text-center">已到最后一页</p>
+            </div>
+        </section>
+    </div>
+</section>
+<include file="Home@Public/footer" />
+<script>
+    require(["script"], function ($) {
+
+        var json = '{$get}';
+        json = json !=null?JSON.parse(json):"";
+        //当前页数
+        var currPage = 0;
+        //每页条数
+        var pageSize = 3;
+        //总页数
+        var totalPage = 0;
+        //是否已在加载数据
+        $.ajax_loading = false;
+
+        //获取总页数
+        $.post("{:U('/home/index/get_article_totalPage')}", $.extend({pageSize:pageSize},json), function (d) {
+            totalPage = d.result;
+        },"json");
+
+        //首次加载
+        var param = $.extend({start:currPage*pageSize,length:pageSize},json);
+        $.load_article_lists_html("{:U('/home/index/lists')}",param ,500,currPage);
+
+        $(window).scroll(function () {
+            /*判断窗体高度与竖向滚动位移大小相加 是否 超过内容页高度*/
+            if (($(window).height() + $(window).scrollTop()) >= $("body").height()) {
+                if($.ajax_loading == false){
+                    if(currPage >= totalPage - 1){
+                        $("#warning p").text("已到最后一页");
+                        $("#warning").fadeIn();
+                        return false;
+                    }
+                    currPage++;
+                    var param = $.extend({start:currPage*pageSize,length:pageSize},json);
+                    $.load_article_lists_html("{:U('/home/index/lists')}",param ,500,currPage);
+                }else{
+                    console.log("执行ing...")
+                }
+            }
+        });
+    });
+</script>

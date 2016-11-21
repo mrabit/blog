@@ -1,0 +1,18 @@
+[ 2016-10-05T03:34:35+08:00 ] 93.174.93.136 http://www.baidu.com/cache/global/img/gs.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.019211s ]
+ERR: 无法加载模块:Cache
+
+[ 2016-10-05T04:00:02+08:00 ] 80.82.78.38 http://www.baidu.com/cache/global/img/gs.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001414s ]
+ERR: 无法加载模块:Cache
+
+[ 2016-10-05T22:52:48+08:00 ] 5.255.253.55 /robots.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008005s ]
+ERR: 无法加载模块:Robots
+

@@ -1,0 +1,54 @@
+[ 2016-10-19T09:24:35+08:00 ] 182.150.0.124 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000143s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-10-19T09:24:39+08:00 ] 182.150.0.124 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-10-19T09:42:14+08:00 ] 182.150.0.124 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000157s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-10-19T16:47:01+08:00 ] 182.150.0.124 /about.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000143s ]
+ERR: 无法加载模块:About
+
+[ 2016-10-19T16:47:01+08:00 ] 182.150.0.124 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-10-19T23:16:03+08:00 ] 182.150.0.124 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-10-19T23:16:18+08:00 ] 182.150.0.124 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-10-19T23:26:35+08:00 ] 182.150.0.124 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+ERR: 无法加载模块:Favicon
+
+[ 2016-10-19T23:40:37+08:00 ] 182.150.0.124 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000158s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+ERR: 无法加载模块:Favicon
+
