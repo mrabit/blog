@@ -6,7 +6,7 @@
         <fileTransfer accessType="LOCAL" />
       </webServer>
       <webServer id="76c5bb7d-c326-45d7-94b7-3e2038a51033" name="blog" url="http://blog.mrabit.com">
-        <fileTransfer host="120.24.72.90" port="22" rootFolder="/usr/share/httpd/blog" accessType="SFTP" password="dfeadfd9dfcbdfc6dfcbdfc2dfcfdfd3dfc5dfc7" username="root">
+        <fileTransfer host="120.24.72.90" port="22" rootFolder="/usr/share/httpd/blog" accessType="SFTP" password="dfeadfd9dfcbdfc6dfcbdfc2dfcfdfd3dfc5dfc7" username="yuany">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
