@@ -29,6 +29,27 @@ define(["jquery"], function ($) {
             });
         },timeOut);
     }
+    $.load_article_lists_html = function (url,param, timeOut, currPage) {
+        $("#article_loading").fadeIn();
+        $.ajax_loading = true;
+        setTimeout(function(){
+            $.ajax({
+                async: false,
+                url: url,
+                data: param,
+                success: function (data) {
+                    //当前页数currPage为0,则是第一次加载数据
+                    if(currPage == 0){
+                        $('#lists_content').html(data);
+                    }else{
+                        $('#lists_content').append(data);
+                    }
+                    $("#article_loading").hide();
+                    $.ajax_loading = false;
+                }
+            });
+        },timeOut);
+    }
     $.initMasonry = function (ele,ele2) {
         require(["masonry"], function (Masonry) {
             var elem = document.querySelector(ele || '.masonry_main');
