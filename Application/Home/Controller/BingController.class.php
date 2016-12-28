@@ -31,15 +31,14 @@ class BingController extends Controller
         //查找数据库是否存在该日期图片
         $result = $bing->get_img_by_time($img_time,$field);
         //数据库存在,输出
-        if($result["code"] == "OK"){
-            return $result;
-        }
+//        if($result["code"] == "OK"){
+//            return $result;
+//        }
         //获取bing该日图片
         $data["idx"] = $d;
         $data["format"] = "js";
         $data["n"] = "1";
         $http_text = get_http_content("http://cn.bing.com/HPImageArchive.aspx",$data,"GET",array("Content-type: text/html; charset=utf-8",'CLIENT-IP:125.71.135.221','X-FORWARDED-FOR:125.71.135.221'));
-
         //获取bing该日图片失败,输出错误信息(ps:错误信息和查询数据库未找到一样)
         if($http_text == "null"){
             return $result;
@@ -48,7 +47,7 @@ class BingController extends Controller
         $http_json = json_decode($http_text,true);
         //获取该日图片url
         $img_real_url = $http_json["images"][0]["url"];
-        //$img_real_url = strpos($img_real_url,"http://")?$img_real_url:"http://www.bing.com".$img_real_url;
+        $img_real_url = strpos($img_real_url,"http://")?$img_real_url:"http://s.cn.bing.net".$img_real_url;
         //获取该日图片简介
         $img_title = $http_json["images"][0]["copyright"];
         //保存该图片到本地
