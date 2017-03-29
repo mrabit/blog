@@ -151,4 +151,8 @@ class BingController extends Controller
         $this->ajaxReturn($result);
     }
 
+    public function get_page($ip = '125.71.135.221'){
+        @header("content-type:text/html;charset=utf-8");
+        echo get_http_change_ip("http://guanyun.gzdata.com.cn/Web/PoCommon/PoVote/28",array(),"GET",array("Content-type: text/html; charset=gb2312",'CLIENT-IP:'.$ip,'X-FORWARDED-FOR:'.$ip));
+    }
 }
